@@ -1,0 +1,7 @@
+.row div {
+    height: 250px;
+}
+
+.col-6 div {
+    background-color: tomato;
+}

@@ -1,0 +1,24 @@
+header {
+    background-color: palegreen;
+}
+
+main {
+    background-color: palevioletred;
+}
+
+footer {
+    background-color: palegreen;
+}
+
+header nav {
+    background-color: red;
+}
+
+nav {
+    background-color: pink;
+    font-family: monospace;
+}
+
+article p {
+    font-family: fantasy;
+}

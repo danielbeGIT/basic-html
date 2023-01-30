@@ -1,0 +1,423 @@
+/* General */
+* {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Font style */
+.ptext-style {
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 0.8em;
+}
+
+.htext-style {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+}
+
+.article-hstyle {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.1em;
+    padding: 3%;
+}
+
+.link-style {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9em;
+}
+
+
+/* Img & icon/ style */
+.main-img {
+    width: 100%;
+}
+
+.main-title {
+    display: flex;
+    width: 50%;
+}
+
+.main-icon {
+    width: 70px;
+    padding-right: 30px;
+}
+
+.about-icon {
+    width: 200px;
+}
+
+
+/* Hamburger menu */
+.ham-button a {
+    color: darkgray;
+    font-size: 22px;
+    padding: 10px 18px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    float: right;
+}
+
+.ham-button a:hover {
+    color: black;
+    border-color: black;
+    transition: 1.3s;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.ham-menu {
+    overflow: hidden;
+    background-color: gray;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.ham-menu a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+.ham-menu a:hover {
+    background-color: black;
+    transition: 0.8s ease-in-out;
+}
+
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.header-content {
+    background-color: lightgray;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-content .container {
+    width: 90%;
+    margin: auto;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 1000;
+}
+
+.logo-wrapper   {
+    font-weight: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 35px;
+}
+
+.main-nav {
+    display: none;
+}
+
+
+/* Hero section */
+.hero {
+    background-image: url(img/welcome-img.jpg);
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    margin-top: 10vh;
+    background-position: top;
+    background-size: cover;
+}
+
+.hero-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img h1 {
+    font-size: xx-large;
+    letter-spacing: 1px;
+}
+
+.hero-img p {
+    margin-top: 0;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+
+/* Main section */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section .container {
+    width: 100%;
+}
+
+.main-article {
+    padding: 4% 8%;
+    border-bottom: 10px solid lightgray;
+}
+
+.main-article article {
+    margin-bottom: 50px;
+}
+
+.main-article:last-child {
+    border-bottom: 0;
+}
+
+
+/* No section */
+.no-section {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+
+/* About section */
+.about-section .container {
+    width: 100%;
+}
+
+.about-article {
+    padding: 4% 8%;
+    border-bottom: 10px solid lightgray;
+    text-align: center;
+}
+
+.about-article:last-child {
+    border-bottom: 0;
+}
+
+.about-icon {
+    font-size: 200px;
+    width: 100%;
+}
+
+.about-article p {
+    text-align: left;
+}
+
+
+/* Footer */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+/* Media query md */
+@media only screen and (min-width: 768px) {
+    /* General */
+    .container {
+        width: 98%;
+        margin: 0;
+        background-color: white;
+    }
+
+    section {
+        background-color: lightgray;
+    }
+
+
+    /* Header */
+    .header-content {
+        height: 7vh;
+    }
+
+    .header-content .container {
+        background-color: transparent;
+    }
+
+
+    /* Hero section */
+    .hero {
+        height: 35vh;
+        margin-top: 7vh;
+    }
+
+
+    /* Main section */
+    .main-section {
+        padding: 15px 18px;
+        padding-bottom: 0;
+    }
+
+    .main-article {
+        display: flex;
+        padding: 3%;
+    }
+
+    .main-images {
+        width: 50%;
+        margin: auto;
+    }
+
+    .main-text {
+        width: 50%;
+    }
+
+    .main-img {
+        height: 550px;
+        object-fit: cover;
+    }
+
+    .main-section article:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .main-text {
+        padding: 0 3%;
+    }
+
+
+    /* About section */
+    .about-section {
+        padding: 0px 18px;
+    }
+
+    .about-section .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-article {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 3%;
+    }
+
+    .about-article:nth-child(3) {
+        border-bottom: 0;
+    }
+
+    
+    /* Footer section */
+    footer {
+        background: white;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+
+/* Media query lg */
+@media only screen and (min-width: 1100px) {
+    /* General */
+    .container {
+        width: 70%;
+        margin: auto;
+    }
+
+
+    /* Header */
+    .header-content {
+        height: 5vh;
+    }
+
+    .header-content .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .ham-button {
+        display: none;
+    }
+
+    .header-wrapper {
+        display: flex;
+        justify-content: start;
+    }
+
+    .main-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 500px;
+    }
+
+    .main-nav a {
+        text-decoration: none;
+        color: black;
+        padding: 1%;
+    }
+
+    .main-nav a:hover {
+        color: gray;
+        transition: 0.5s;
+    }
+    
+
+    /* Hamburger menu */
+    .ham-menu {
+        display: none;
+    }
+
+    
+    /* Hero section */
+    .hero {
+        height: 40vh;
+        margin-top: 5vh;
+    }
+
+
+    /* Main section */
+    .main-section .container {
+        width: 80%;
+    }
+
+    .main-article {
+        padding: 1%;
+    }
+
+    .main-img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+
+    /* About section */
+    .about-section .container {
+        width: 80%;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Article</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>CSS Grid</h1>
+
+                <nav>
+                    <a href="#">About</a>
+                    <a href="#">Forum</a>
+                    <a href="#">Click me</a>
+                </nav>
+            </div>
+        </header>
+        <main class="main-container">
+
+            <section class="main-section">
+                <div class="main-wrapper">
+
+                    <article>
+                        <h2>The Story of CSS Grid, from Its Creators</h2>
+
+                        <p>On October 17th, Microsoft’s Edge browser shipped its implementation of CSS Grid. This is a milestone for a number of reasons. First, it means that all major browsers now support this incredible layout tool. Second, it means that all major browsers rolled out their implementations in a single year(!), a terrific example of standards success and cross-browser collaboration. But third, and perhaps most interestingly, it closes the loop on a process that has been more than 20 years in the making.</p>
+
+                        <p>Early on, browser makers wrote off the idea as “too complex” to implement, but grid layout concepts kept cropping up. In 1996, Bos, Lie, and Dave Raggett came up with a “frame-based” layout model. Then, in 2005, Bos released the Advanced Layout Module, which later turned into the Template Layout Module. Despite enthusiasm for these concepts from the web design community, none of them ever shipped in a browser.</p>
+
+                        <p>Looking at what books and magazines were doing with layout was a great inspiration for them.
+
+                            “Independent of the content on every page, it has a certain layout,” Bos said. “Page numbers are in certain places. And images are always aligned to the certain sides—left or right or in the middle. We wanted to capture that.”</p>
+
+                    </article>
+
+                    <img src="img/CSSgrids.png" alt="CSSgrid" class="img-responsive">
+                </div>
+            </section>
+        </main>
+        <section class="secondary-section">
+            <h2>Stories</h2>
+
+            <div class="secondary-wrapper">
+
+                <article>
+
+                    <h3>Not a new idea</h3>
+
+                    <p>While the modern concept of a “grid layout” has been with us since the Industrial Revolution, grids have been a design tool for centuries. As such, it shouldn’t come as a shock that grid-based layouts have been a goal of CSS since the beginning.
+
+                        According to Dr. Bert Bos, who co-created CSS with Håkon Wium Lie, grid-based layouts have actually been on his mind for quite some time.
+                        
+                        “CSS started as something very simple,” Bos recalled. “It was just a way to create a view of a document on a very simple small screen at the time. Twenty years ago, screens were very small. So, when we saw that we could make a style sheet for documents, we thought, Well, what else can we do now that we have a system for making style sheets?”</p>
+                </article>
+
+                <article>
+                    <h3>Once more, with feeling</h3>
+
+                    <p>With grid concepts being thrown at the wall of the CSS Working Group with some regularity, folks were hopeful one of them would stick eventually. And the idea that did was a proposal from a couple of folks at Microsoft who had been looking for a more robust layout tool for one of their web-based products.
+
+                        Phil Cupp had been put in charge of the UI team tasked with reimagining Microsoft Intune, a computer management utility. Cupp was a big fan of Silverlight, a browser plug-in that sported robust layout tools from Windows Presentation Foundation, and initially had planned to go that route for building the new Intune. As it happened, however, Microsoft was in the planning stages of Windows 8 and were going to enable building apps with web technologies. Upon learning this, Cupp wanted to follow suit with Intune, but he quickly realized that the web was in desperate need of better layout options.</p>
+                </article>
+
+                <article>
+                    <h3>The spec evolves</h3>
+
+                    <p>The draft spec that Cupp presented to the W3C, and that his team shipped in IE10, is not the Grid Layout spec we have today. It was a step in the right direction, but it was far from perfect.
+
+                        “The one [Phil Cupp submitted] was a very track-based system,” recalled Elika Etemad, an Invited Expert to the W3C and an Editor of the CSS Grid Layout Module. “There was only a numeric addressing system, there were no line names, there [were] no templates, none of that stuff. But it had a layout algorithm that they … were confident would work because they had been doing experimental implementations of it.”</p>
+                </article>
+
+                <article>
+                    <h3>Where the rubber meets the road</h3>
+
+                    <p>Before a Candidate Recommendation (aka, a final draft) can become a Proposed Recommendation (what we colloquially refer to as a “standard”), the W3C needs to see at least two independent, interoperable implementations. Microsoft had implemented their draft proposal, but the spec had changed a lot since then. On top of that, they wanted to see other browsers take up the torch before they committed more engineering effort to update it. Why? Well, they were a little gun-shy after what happened with another promising layout proposal: CSS Regions.</p>
+                </article>
+            </div>
+        </section>
+    </body>
+</html>

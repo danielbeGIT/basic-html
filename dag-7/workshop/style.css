@@ -1,0 +1,99 @@
+/* General Buttons */
+.small-padding {
+    padding: 2%;
+}
+
+.para-Size {
+    font-size: 2em;
+}
+
+.button-Style {
+    text-decoration: none;
+    border-radius: 1%;
+}
+
+.button-Blue {
+    color: white;
+    background-color: blue;
+    padding: 1em;
+}
+
+.button-White {
+    color: blue;
+    background: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav {
+    display: none;
+}
+
+.account-buttons {
+    display: none;
+}
+
+main {
+
+}
+
+.hero {
+    /* background-color: aqua;
+    min-height: 40vh; */
+}
+
+.hero-text {
+    /* position: absolute;
+    top: 20%;
+    left: 10%; */
+    text-align: center;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-wrapper img {
+    width: 100%;
+}
+
+@media only screen and (min-width:768px) {
+    .about-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .about-wrapper article {
+        width: 50%;
+    }
+
+    .info-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .info-wrapper article {
+        width: 50%;
+    }
+
+    .info-wrapper img {
+        width: 50%;
+    }
+
+    .info-wrapper article:first-child {
+        flex-direction: row-reverse;
+    }
+}

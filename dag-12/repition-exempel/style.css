@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* Header */
+.site-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Main Content */
+
+.hero {
+    background-color: tomato;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.main-image {
+    height: 20vh;
+    width: 100%;
+    background-color: lightseagreen;
+}
+
+.main-text  {
+    padding: 0.5rem;
+}
+
+.related-image {
+    height: 20vh;
+    width: 100%;
+    background-color: lightskyblue;
+}
+
+.related-text {
+    padding: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-nav {
+        flex-direction: row;
+    }
+
+    /* kolla här */
+    .related-articles .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .related-article {
+        text-align: center;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0.6rem;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .main-article {
+        display: flex;
+    }
+
+    .main-image {
+        width: 50%;
+    }
+
+    .main-text {
+        width: 50%;
+    }
+}

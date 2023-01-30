@@ -1,0 +1,7 @@
+.col-md-6 div{
+    background-color: green;
+}
+
+.secondChild article:first-child {
+    flex-direction: row-reverse;
+}

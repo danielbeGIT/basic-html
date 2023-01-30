@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <form action="" class="form-1">
+
+            <h2>Contact me</h2>
+
+            <div class="iD-container">
+                <label for="iD" class="loginFont">ID:</label><br>
+                <input type="text" name="iD" id="iD" placeholder="ID.."><br>
+            </div>
+
+            <div class="passWord-container">
+                <label for="passWord" class="loginFont">Password:</label><br>
+                <input type="password" name="passWord" id="passWord" placeholder="Password.."><br>
+            </div>
+
+            <div class="messageMe-container">
+                <label for="messageMe" class="loginFont">Message:</label><br>
+                <textarea name="messageMe" id="messageMe" cols="50" rows="10" placeholder="Type here.."></textarea>
+            </div>
+
+            <input type="submit" value="Send" id="submitButton">
+
+        </form>
+
+
+        <form action="" class="form-2">
+            <h2>Välj ingredienser:</h2>
+
+            <input type="checkbox" name="tomat" id="tomat" value="Tomat">
+            <label for="tomat">Tomat</label>
+
+            <input type="checkbox" name="champinjoner" id="champinjoner" value="Champinjoner">
+            <label for="champinjoner">Champinjoner</label>
+
+            <input type="checkbox" name="salami" id="salami" value="Salami">
+            <label for="salami">Salami</label>
+
+            <input type="checkbox" name="ost" id="ost" value="Ost">
+            <label for="ost">Ost</label>
+
+            <input type="checkbox" name="ananas" id="ananas" value="Ananas">
+            <label for="ananas">Ananas</label>
+
+
+            <h2>Storlek på pizzan:</h2>
+
+            <input type="radio" name="pizza_size" id="small" value="small">
+            <label for="small">Small</label>
+
+            <input type="radio" name="pizza_size" id="medium" value="medium">
+            <label for="medium">Medium</label>
+
+            <input type="radio" name="pizza_size" id="large" value="large">
+            <label for="large">Large</label>
+
+            <h2>Välj en dryck:</h2>
+
+            <input type="checkbox" name="drink" id="cola" value="Cola">
+            <label for="cola">Cola</label><br>
+
+            <input type="checkbox" name="drink" id="fanta" value="Fanta">
+            <label for="fanta">Fanta</label><br>
+
+            <input type="checkbox" name="drink" id="trocadero" value="Trocadero">
+            <label for="trocadero">Trocadero</label><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </body>
+</html>

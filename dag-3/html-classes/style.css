@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+article {
+    padding: 1%;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.img-responsive {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.font-weight-200 {
+    font-weight: 200;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.articles article {
+    padding: 1%;
+    font-family: monospace;
+}
+
+/* .article-2 {
+    background-color:green;
+} */
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: red;
+}
+
+main {
+    background-color: blue;
+}

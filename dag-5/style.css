@@ -1,0 +1,46 @@
+.form-1 {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.loginFont {
+    font-weight: 900;
+}
+
+#iD {
+    width: 50%;
+    padding: 1% 2%;
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+#passWord {
+    width: 50%;
+    padding: 1% 2%;
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+#messageMe {
+    width: 50%;
+    padding: 1% 2%;
+    margin: 1%;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#submitButton {
+    border: 1px solid black;
+    padding: 1% 2%;
+    margin: 1%;
+    color: white;
+    background-color: aqua;
+    cursor: pointer;
+    width: 50%;
+    font-size: large;
+}
+
+#submitButton:hover {
+    background-color: crimson;
+    transition: 0.5s;
+}
